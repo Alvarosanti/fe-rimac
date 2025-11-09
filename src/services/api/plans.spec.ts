@@ -11,12 +11,16 @@ const mockPlansResponse = {
     ],
 }
 
-describe("getPlan", () => {
+describe("PlanService", () => {
     beforeEach(() => {
         jest.restoreAllMocks();
     })
 
-    test('Deberia retornar una lista de planes', async () => {
+    test('should be defined', () => {
+        expect(getPlans).toBeDefined();
+    })
+
+    test('should return plans', async () => {
         global.fetch = jest.fn(() =>
             Promise.resolve({
                 json: () => Promise.resolve(mockPlansResponse),

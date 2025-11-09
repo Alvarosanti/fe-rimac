@@ -1,15 +1,10 @@
-import type { User } from "@/types/user";
+import type { Plans } from "@/types/plans";
+import type { PlansResponse } from "@/types/plans-response";
 
 const PLANS_ENDPOINT = 'https://rimac-front-end-challenge.netlify.app/api/plans.json'
 
-export const getPlans = async (): Promise<User> => {
-    // return fetch(PLANS_ENDPOINT)
-    // .then(res => res.json())
-    // .then(data => {
-    //     const { plans } = data
-    //     return plans;
-    // })
+export const getPlans = async (): Promise<Plans[]> => {
     const res = await fetch(PLANS_ENDPOINT)
-    const data: User = await res.json();
-    return data;
+    const data: PlansResponse = await res.json();
+    return data.list;
 }

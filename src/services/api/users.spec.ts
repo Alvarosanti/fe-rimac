@@ -6,12 +6,16 @@ const mockUserResponse = {
     birthDay: "02-04-1990",
 }
 
-describe("getUser", () => {
+describe("UserService", () => {
     beforeEach(() => {
         jest.restoreAllMocks();
     })
 
-    test('Deberia retornar usuarios', async () => {
+    test('should be defined', () => {
+        expect(getUsers).toBeDefined();
+    })
+
+    test('should return users', async () => {
         global.fetch = jest.fn(() =>
             Promise.resolve({
                 json: () => Promise.resolve(mockUserResponse),
