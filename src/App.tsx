@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
- 
+      {/* navbar */}
+      {/* content */}
+      {/* footer */}
     </>
   )
 }
