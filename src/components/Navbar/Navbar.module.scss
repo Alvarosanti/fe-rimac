@@ -1,5 +1,5 @@
-@import "@/styles/_variables";
-@import "@/styles/mixins";
+@import "@/styles/_variables.scss";
+@import "@/styles/mixins.scss";
 
 .navbar {
   background-color: transparent;
@@ -13,7 +13,8 @@
   }
 
   &__logo img {
-    width: 120px;
+    width: 65px;
+    min-width: 65px;
     height: auto;
   }
 
@@ -21,22 +22,22 @@
     display: flex;
     align-items: center;
     gap: $spacing-lg;
-
-    @include respond-to(mobile) {
-      gap: $spacing-md;
-    }
   }
 
   &__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-align: right;
+
     color: $color-text;
-    font-weight: 500;
     text-decoration: none;
     transition: color 0.2s ease, text-decoration 0.3s ease;
 
     &:hover {
       text-decoration: underline;
       text-underline-offset: 3px;
-
     }
   }
 
@@ -50,6 +51,10 @@
     &:hover {
       text-decoration: underline;
       border: none;
+    }
+
+    @include respond-to(mobile) {
+      display: none;
     }
   }
 }
