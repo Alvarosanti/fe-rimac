@@ -3,17 +3,16 @@ $columns-desktop: 12;
 $columns-mobile: 4;
 
 $gutter-desktop: 24px;
-$gutter-mobile: 16px;
+$gutter-mobile: 24px;
 
 $container-max-width: 1200px;
-$container-padding: 80px;
+$container-padding: 24px;
 
 .container {
   max-width: $container-max-width;
   margin: 0 auto;
   padding-left: $container-padding;
   padding-right: $container-padding;
-  display: grid;
   grid-template-columns: repeat($columns-desktop, 1fr);
   gap: $gutter-desktop;
 
