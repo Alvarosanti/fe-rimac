@@ -17,10 +17,9 @@
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
     /* Linting */
     "strict": true,
@@ -35,7 +34,8 @@
         "src/*"
       ]
     },
-    "allowJs": true
+    "allowJs": true,
+    "composite": true,
   },
   "include": [
     "src"
