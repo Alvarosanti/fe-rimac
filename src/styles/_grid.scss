@@ -1,0 +1,26 @@
+
+$columns-desktop: 12;
+$columns-mobile: 4;
+
+$gutter-desktop: 24px;
+$gutter-mobile: 16px;
+
+$container-max-width: 1200px;
+$container-padding: 80px;
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  display: grid;
+  grid-template-columns: repeat($columns-desktop, 1fr);
+  gap: $gutter-desktop;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat($columns-mobile, 1fr);
+    gap: $gutter-mobile;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  }
+}
