@@ -33,8 +33,10 @@ export const Home = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        localStorage.setItem("formData", JSON.stringify(form));
-    }, [form]);
+        return () => {
+            localStorage.removeItem("formData");
+        };
+    }, []);
 
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -84,7 +86,6 @@ export const Home = () => {
 
             if (user) {
                 localStorage.setItem("user", JSON.stringify(user));
-                localStorage.setItem("formData", JSON.stringify(form));
                 navigate("/plans");
             } else {
                 setErrors({ documentNumber: "Usuario no encontrado" });
