@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos generados por TypeScript
+*.tsbuildinfo
+src/**/*.js
+src/**/*.d.ts
+
+# Carpetas de build o dist
+dist/
+build/
