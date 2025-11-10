@@ -7,7 +7,7 @@ export const Navbar = () => {
             <div className="container">
                 <div className={styles.navbar__content}>
                     <div className={styles.navbar__logo}>
-                        <img src="/logoRimac.svg" alt="Logo" />
+                        <img src="/logoRimac.svg" alt="Logo_Navbar" />
                     </div>
 
                     <nav className={styles.navbar__actions}>
