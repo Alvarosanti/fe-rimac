@@ -21,7 +21,7 @@ export const Summary = () => {
 
                 {/* Volver */}
                 <button className={styles.backButton} onClick={() => navigate(-1)}>
-                    ↩ Volver
+                    ← Volver
                 </button>
 
                 {/* Resumen */}
