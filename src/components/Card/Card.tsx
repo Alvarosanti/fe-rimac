@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "./Card.module.scss";
 import CheckIcon from "@/assets/icons/checkIcon.svg"; // tu ícono ya existente
 

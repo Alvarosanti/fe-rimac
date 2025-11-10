@@ -36,6 +36,8 @@
     },
     "allowJs": true,
     "composite": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src"

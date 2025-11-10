@@ -22,7 +22,7 @@ describe("UserService", () => {
             })
         ) as jest.Mock;
 
-        const result = await getUsers();
+        const result = await getUsers("12345678");
 
         expect(fetch).toHaveBeenCalledTimes(1);
         expect(result).toEqual(mockUserResponse);
