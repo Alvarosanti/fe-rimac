@@ -1,3 +1,45 @@
+# App Rimac web responsive
+
+Application in React + TypeScript, with modular SCSS styles following BEM methodology to maintain consistency and scalability.
+
+# Installation
+
+Install pnpm
+
+```bash
+npm install -g pnpm
+```
+
+Version
+
+```bash
+pnpm -v
+```
+
+Install dependencies
+
+```bash
+pnpm install
+```
+
+Run project
+
+```bash
+pnpm dev
+```
+
+Run test
+
+```bash
+pnpm test
+```
+
+Run lint
+
+```bash
+pnpm lint
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
